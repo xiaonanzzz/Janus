@@ -1,6 +1,5 @@
 import os
 import hashlib
-from IPython.display import display, Image
 import requests
 import base64
 import torch
@@ -9,6 +8,7 @@ from janus.models import MultiModalityCausalLM, VLChatProcessor
 from janus.utils.io import load_pil_images
 
 torch.cuda.set_device(1)
+
 class DeepSeekJanusWrapper:
 
     def __init__(self):
